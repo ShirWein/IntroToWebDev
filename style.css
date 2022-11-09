@@ -1,9 +1,108 @@
-.main_section {
-    background-color: black;
-    height: 600px;
+a {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #8892b0;
 }
 
-.menu ul {
+h1 {
+    display:block;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 1.5em;
+    color:#64FFDA;
+}
+
+h2 {
+    display: block;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-size: 3.5em;
+    color: #ccd6f6;
+}
+
+h3 {
+    display: block;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-size: clamp(40px, 8vw, 80px);
+    color:#8892B0;
+}
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    color: #8892b0
+}
+
+.email a:hover{
+    color:#64FFDA;
+}
+
+.site{
+    display:grid;
+    grid-template-columns:1fr 3fr;
+    grid-template-areas:"header header header"
+                        "sidebar main main"
+                        "sidebar main main"
+                        "footer footer footer"
+    ;
+}
+.site > * {padding:30px;}
+
+.header{background:#151320; grid-area:header; color:#64FFDA; font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;}
+.heading {color: #64FFDA;
+font-size: 30px;
+font: weight 4px;}
+
+
+.container img{
+    top: 0px;
+    right: 0px;
+}
+
+
+.main-content{
+background:#0A192F; grid-area:main;
+min-height:500px;
+}
+
+
+.sidebar {
+    background:#151320da; 
+    grid-area:sidebar;
+
+}
+
+
+
+
+.footer {
+    background:#151320; grid-area:footer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color:#64FFDA;
+}
+
+
+.brand-logo {
+    background: url(./favicon/favicon-32x32.png) 0 0 no-repeat;
+    background-size: 32px 32px;
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+    width: 32px;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+
+/* .menu ul {
     display: flex;
     flex-direction: row;
     float: right;
@@ -51,4 +150,4 @@ font-family: inherit;
 display: inline-block;
 width: 119px;
 text-align: center;
-}
+} */
