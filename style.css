@@ -107,6 +107,7 @@ main{
     flex-wrap: wrap;
     margin-left: 30px;
     margin-top: 15px;
+    margin-right: 15px;
 }
 
 
@@ -135,6 +136,29 @@ aside ul li a:hover{
     color: #0c7db1;
     background:white;
     border-right: 2px solid rgb(5, 68, 104);
+}
+
+
+.movie_right {
+    float: right;
+}
+
+.movie_right p {border: #64FFDA solid 2px;
+    border-radius: 4px;
+    overflow-wrap:normal;}
+
+.movies > p > * {
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    color: #ffffff
+}
+
+.movies q {
+    color:#8892b0;
+    margin-left: -20px;
+}
+
+.place_imgs {
+    float: right;
 }
 
 /* FOOTER SECTION */
