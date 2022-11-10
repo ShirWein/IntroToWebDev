@@ -1,3 +1,21 @@
+/* html, body {
+    height: 100%;
+} */
+
+/* body.light {
+    background-color: #ccd6f6;
+    color:#0A192F;
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
 a {
     text-align: center;
     cursor: pointer;
@@ -6,6 +24,7 @@ a {
 }
 
 h1 {
+    /* min-height: 4vw; */
     display:block;
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     font-size: 1.5em;
@@ -20,6 +39,7 @@ h2 {
 }
 
 h3 {
+    margin-top: 3vh;
     display: block;
     font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     font-size: clamp(40px, 8vw, 80px);
@@ -37,26 +57,37 @@ p {
     color: #8892b0
 }
 
-.email a:hover{
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.email a:hover {
     color:#64FFDA;
 }
 
-.site{
+.layout {
     display:grid;
-    grid-template-columns:1fr 3fr;
-    grid-template-areas:"header header header"
-                        "sidebar main main"
-                        "sidebar main main"
-                        "footer footer footer"
-    ;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "header header"
+                        "sidebar main"
+                        "sidebar main"
+                        "footer footer";
+    width: 100vw;
+    height: 100vh;
 }
-.site > * {padding:30px;}
 
-.header{background:#151320; grid-area:header; color:#64FFDA; font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;}
-.heading {color: #64FFDA;
-font-size: 30px;
-font: weight 4px;}
+/* HEADER SECTION */
+.header { 
 
+    grid-area: header;
+    background:#151320; color:#64FFDA; font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;}
+
+.heading {
+    color: #64FFDA;
+    font-size: 30px;
+    font: weight 4px;
+}
 
 .container img{
     top: 0px;
@@ -64,28 +95,60 @@ font: weight 4px;}
 }
 
 
-.main-content{
-background:#0A192F; grid-area:main;
-min-height:500px;
+main{
+    grid-area:main;
+    overflow: auto;
+    background:#0A192F; 
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-top: 15px;
 }
 
 
-.sidebar {
-    background:#151320da; 
+
+/* NAV SECTION */
+
+aside {
     grid-area:sidebar;
-
+    background:#151320da; 
 }
 
+.sidebar ul {
+    /* position: fixed;
+    margin-top: 72px; */
+}
 
+.sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
 
+aside ul li a:hover{
+    color: #0c7db1;
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
 
-.footer {
-    background:#151320; grid-area:footer;
+/* FOOTER SECTION */
+footer {
+    grid-area:footer;
+    background:#151320; 
     display:flex;
     justify-content: center;
     align-items: center;
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     color:#64FFDA;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
 
