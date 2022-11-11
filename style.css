@@ -2,10 +2,10 @@
     height: 100%;
 } */
 
-body.light {
+/* body.lightMode, .layout, .header, main, aside, footer {
     background-color: #ccd6f6;
     color:#0A192F;
-}
+} */
 
 
 *{
@@ -454,3 +454,14 @@ footer {
         color: #8892b0;
     }
   }
+
+/* **** UNCOMMENT THE CODE BELOW (and also the class in body section)
+IN ORDER TO SEE MY WEBSITE IN LIGHT MODE. 
+I CHOSE TO DISPLAY INITIALLY IN DARK MODE, 
+BECAUSE THIS IS MUCH BETTER *** */
+
+/* body.lightMode, .layout *, .sidebar *,.sidebar ul li a, .header *, main *, li a, aside , footer, .main-content > *, .main > * {
+    color: black;
+    background-color: #dcdfe7;
+    
+} */
