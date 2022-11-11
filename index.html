@@ -113,7 +113,13 @@
                             <h3>Why I like this place</h3><br/><p>since it is a lovely one for skiing</p>
                         </div>
                         <div class="place_imgs">
-                            <img src="https://vcdn.bergfex.at/images/resized/d8/659c6b32896f28d8_704371551b8c8f15@2x.jpg" alt= "Map of area of Kaprun" width="500px" height="300px">
+                            <a href="#" class="thunmbnail">
+                                <img src="https://vcdn.bergfex.at/images/resized/d8/659c6b32896f28d8_704371551b8c8f15@2x.jpg" alt= "Map of area of Kaprun" width="500px" height="300px">
+                                <span>
+                                    <img src="https://vcdn.bergfex.at/images/resized/d8/659c6b32896f28d8_704371551b8c8f15@2x.jpg" alt= "Map of area of Kaprun" width="500px" height="300px">
+                                </span>
+                            </a>
+                            
                             <img src="https://vcdn.bergfex.at/images/resized/d8/659c6b32896f28d8_704371551b8c8f15@2x.jpg" alt= "Map of area of Kaprun" width="500px" height="300px">
                             <img src="https://vcdn.bergfex.at/images/resized/d8/659c6b32896f28d8_704371551b8c8f15@2x.jpg" alt= "Map of area of Kaprun" width="500px" height="300px">
                             <img src="https://vcdn.bergfex.at/images/resized/d8/659c6b32896f28d8_704371551b8c8f15@2x.jpg" alt= "Map of area of Kaprun" width="500px" height="300px">
@@ -130,10 +136,10 @@
                     <div id="feedbackForm">
                         <h3 class="form-title">Feedback Form</h3>
                         <h5>I'd love to hear your honest thoughts!</h5>
-                        <form action="" method="get">
+                        <form action="./results.html" method="get">
                             <div class="user-info">
-                                <label>
-                                    Full name: 
+                                 <span><b>Personal Details</b></span><br/>
+                                <label>Full name: 
                                     <input 
                                     type="text" 
                                     name="fullName"
@@ -162,39 +168,39 @@
                             </div>
 
                             <div class="feedback">
-                                <span class="feedback-title">Your Feedback</span>
-                                <div class="rating">
+                                <span class="feedback-title"><b>Your Feedback</b></span>
+                                <div class="rating">Rating: &nbsp; 
                                     <label> 1
                                         <input 
                                         type="radio" 
-                                        name="1"
+                                        name="r"
                                         required>
                                     </label>
                                     <label> 2
                                         <input 
                                         type="radio" 
-                                        name="2">
+                                        name="r">
                                     </label>
                                     <label> 3
                                         <input 
                                         type="radio" 
-                                        name="3">
+                                        name="r">
                                     </label>
                                     <label> 4
                                         <input 
                                         type="radio" 
-                                        name="4">
+                                        name="r">
                                     </label>
                                     <label> 5
                                         <input 
                                         type="radio" 
-                                        name="5"
+                                        name="r"
                                         checked>
                                     </label>
                                 </div>
 
                                 <div class="hear-website">
-                                    <span class="hear-title">How did you find this website?</span>
+                                    <span class="hear-title">How did you find this website?</span><br/>
                                     <label>
                                         <select name="hearWebsite">
                                             <option selected>GitHub</option>
@@ -207,22 +213,24 @@
                                 </div>
 
                                 <div class="message">
-                                    <h1>Your message</h1>
+                                    <span>Your message</span>
                                     <textarea name="message" placeholder="How can I help?"></textarea>
                                 </div>
 
                             </div>
 
-                            <p>
-                                <button type="submit">
-                                    Done
-                                </button>
-                            </p>
-                            <p>
-                                <button type="reset">
-                                    Reset
-                                </button>
-                            </p>
+                            <div class="buttons">
+                                <p>
+                                    <button type="submit">
+                                        Done
+                                    </button>
+                                </p>
+                                <p>
+                                    <button type="reset">
+                                        Reset
+                                    </button>
+                                </p>
+                            </div>
                         </form>
                     </div>
                 </div>

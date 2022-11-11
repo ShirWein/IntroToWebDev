@@ -197,6 +197,43 @@ aside ul li a:hover{
 .place_imgs::-webkit-scrollbar-thumb {
     background: #64FFDA; 
   }
+  
+.thumbnail:hover img{
+    border: 1px solid transparent;
+}
+
+.thumbnail span{ 
+    position: absolute;
+    padding: 5px;
+    visibility: hidden;
+    color: black;
+    text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+    border-width: 0;
+    width:200%; /* you can use % */
+    height: auto;
+    padding: 2px;
+    }
+    
+    /*When mouse over, the hidden image apear*/
+.thumbnail:hover span{ 
+    transform: scale(0.5) translate(-100%, -100%);
+    position: fixed;
+    visibility: visible;
+    top: 0;
+    right: 0; 
+    z-index: 200;
+}
+
+/* .place_imgs:hover img {
+    background-color: green;
+    cursor: pointer;
+    transform: scale(1.4);
+    transition: transform 150ms ease-in-out;
+    float: inline-start;
+} */
 
 .link {
     grid-column-start: -2;
@@ -209,6 +246,125 @@ aside ul li a:hover{
     align-self: flex-start;
     margin-top: 5px;
 }
+
+/* FEEDBACK SECTION */
+
+#feedbackForm, .message > h1 {
+    color:#8892B0;
+}
+
+.user-info, .feedback {
+    color:#8892B0;
+    border: #64FFDA solid 2px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    padding-left: 4px;
+    padding-bottom: 12px;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.feedback > *:not(.rating) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+    margin: 2px;
+   
+}
+
+/* .user-info > p {
+  text-align: justify;
+} */
+
+input, select, textarea {
+    background-color: #ccd6f6;
+    border-radius: 8px;
+}
+
+label {
+    margin: 2px;
+}
+
+button {
+    border-radius: 7px;
+    padding-inline: 18px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button[type=submit] {
+    background-color: lightgreen;
+}
+
+button[type=reset] {
+    background-color: lightslategray;
+}
+
+button {
+    border-radius: 4px;
+    background-color: lightgreen;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    padding: 16px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+
+
+/* #feedbackForm p {
+    display: flex;
+    justify-content: center;
+} */
+
+/* #feedbackForm p button {
+    justify-content: center;
+} */
+
+
+
+/* .feedback{
+    color:#8892B0;
+} */
 
 /* FOOTER SECTION */
 footer {
