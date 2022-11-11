@@ -2,10 +2,10 @@
     height: 100%;
 } */
 
-/* body.light {
+body.light {
     background-color: #ccd6f6;
     color:#0A192F;
-} */
+}
 
 
 *{
@@ -21,6 +21,13 @@ a {
     cursor: pointer;
     text-decoration: none;
     color: #8892b0;
+}
+
+li > a[target=_blank] {
+    background-image: url(./imgs/external-link.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 1.5px;
 }
 
 h1 {
@@ -119,9 +126,14 @@ aside {
     background:#151320da; 
 }
 
+.sidebar {
+    padding: 0;
+}
+
 .sidebar ul {
-    /* position: fixed;
-    margin-top: 72px; */
+
+    padding: 0;
+ 
 }
 
 .sidebar ul li a{
@@ -134,7 +146,7 @@ aside {
 
 aside ul li a:hover{
     color: #0c7db1;
-    background:white;
+    background:lightgrey;
     border-right: 2px solid rgb(5, 68, 104);
 }
 
@@ -393,52 +405,52 @@ footer {
     border-radius: 50%!important;
 }
 
-/* .menu ul {
-    display: flex;
-    flex-direction: row;
-    float: right;
-}
+/* MOBILE */
+@media only screen and (max-width: 700px) {
 
-.menu ul li {
-    display: inline-block;
-    color: whitesmoke;
-    list-style: none;
+    body {
+        background-color: #0A192F;
+    }
+    .sidebar ul {
+        width: 100%;
+        height: 230px;
+        top: 62px;
+        right: 0;
+        z-index: 2;
+        padding-left: 0rem
+    }
 
-}
+    .sidebar ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-.menu ul li a{
-    color: whitesmoke;
-    text-decoration: none;
-    font-weight: bold;
-    font-family:fantasy;
-    padding: 7px 13px;
+    .sidebar ul li a {
+        display: block;
+    }
 
+    .layout {
+        display:block;
+        width: 100%;
+        height: 100%;
+    }
 
-}
+    .main-content {
+        display: block;
+        margin-left: 18px;
+        margin-top: 213px;
+        margin-right: 15px;
+        text-align: center;}
 
-.menu p {
-    margin: 150px;
+    .user-info, .buttons {
+        display: block;
+    }
 
-}
-
-.main_section p{
-    color: whitesmoke;
-    padding: 150px 0;
-    margin-left: 50px;
-    margin-right: 0;
-}
-
-.hire_btn{
-    background-color: rgba(228, 46, 46, 0.871);
-color: whitesmoke;
-text-decoration: none;
-border-radius: 9px;
-border: 22px;
-padding: 13px;
-margin-left: 50px;
-margin-top: 0px;
-font-family: inherit;
-display: inline-block;
-width: 119px;
-text-align: center;
-} */
+    a {
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        color: #8892b0;
+    }
+  }
