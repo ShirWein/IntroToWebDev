@@ -280,25 +280,37 @@ aside ul li a:hover{
     grid-column-gap: 30px;
 }
 
-.feedback > *:not(.rating) {
+.feedback {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     text-align: justify;
-    margin: 2px;
-   
+    grid-column-gap: 33px;
+    grid-row-gap: 10px;
 }
 
-/* .user-info > p {
-  text-align: justify;
-} */
+.rating, .hear-website {
+    grid-column-start: 1;
+}
+
+ .message {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 4;
+ }
+
+ .message textarea {
+    height: 80px;
+ }
 
 input, select, textarea {
     background-color: #ccd6f6;
     border-radius: 8px;
+    padding: 2px;
 }
 
 label {
-    margin: 2px;
+    margin: 5px;
 }
 
 button {
