@@ -473,6 +473,7 @@ footer {
 
     .user-info, .buttons, .feedback {
         display: block;
+        text-align: center;
     }
 
     .movie_right {
@@ -487,13 +488,35 @@ footer {
     }
   }
 
-/* **** UNCOMMENT THE CODE BELOW (and also the class in body section)
+/* **** UNCOMMENT THE CODE BELOW
 IN ORDER TO SEE MY WEBSITE IN LIGHT MODE. 
 I CHOSE TO DISPLAY INITIALLY IN DARK MODE, 
 BECAUSE THIS IS MUCH BETTER *** */
 
-/* body.lightMode, .layout *, .sidebar *,.sidebar ul li a, .header *, main *, li a, aside , footer, .main-content > *, .main > * {
-    color: black;
+/* body.lightMode * :not(h1, h2, h3, .sidebar *,.sidebar ul li a,li a, aside, header, .header *, input, .feedback *, footer, .footer *, button) {
+    color: rgb(7, 79, 120);
     background-color: #dcdfe7;
-    
+}
+
+body.lightMode header, .header *, footer, .footer * {
+    color: black;
+    background-color: #c5cfeb;   
+}
+
+body.lightMode h1, h2, h3 {
+    color:black;
+    font-weight: bold;
+}
+
+body.lightMode aside, .sidebar * {
+    background-color: #8e86bbdb
+}
+
+body.lightMode button[type=submit] {
+    background-color: #64FFDA;
+}
+
+body.lightMode button[type=reset] {
+    background-color: rgb(54, 62, 70);
 } */
+
